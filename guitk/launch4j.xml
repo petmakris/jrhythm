@@ -1,0 +1,84 @@
+<!-- Bold elements are required -->
+<!-- %VAR% expands environment/special variables and registry keys -->
+<launch4jConfig>
+
+  <headerType>console</headerType> <!-- gui -->
+  <outfile>jrhythm-gui.exe</outfile>
+  <jar>target/jrhythm-gui-0.0.1-SNAPSHOT-shaded.jar</jar>
+  <dontWrapJar>false</dontWrapJar>
+  <errTitle>Error01</errTitle>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl>http://jrhythm.bytewise.gr/</supportUrl>
+  <cmdLine>text</cmdLine>
+  <!--
+  <chdir>path</chdir>
+   -->
+  <priority>normal</priority>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  
+  <!-- <icon>file</icon> -->
+  <!-- <obj>header object file</obj> -->
+  <!-- <lib>w32api lib</lib> -->
+  <!-- <var>var=text (%VAR%)</var> -->
+  
+  <classPath>
+	<mainClass>gr.bytewise.jrhythm.gui.main.Mein</mainClass>
+    <!--<mainClass>gr.bytewise.jrhythm.gui.main.Mein</mainClass>-->
+    <cp>target/lib/*</cp>
+  </classPath>
+  <!--
+  <singleInstance>
+    <mutexName>text</mutexName>
+    <windowTitle>text</windowTitle>
+  </singleInstance> 
+  -->
+  
+  <jre>
+    <!-- Specify one of the following or both -->
+    
+	<path>../jre-1.7</path>
+    <bundledJre64Bit>true</bundledJre64Bit>
+    <bundledJreAsFallback>true</bundledJreAsFallback>
+    <minVersion>1.6.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+	
+
+    <initialHeapSize>184</initialHeapSize>
+    <initialHeapPercent>20</initialHeapPercent>
+    <maxHeapSize>512</maxHeapSize>
+    <maxHeapPercent>100</maxHeapPercent>
+    <!--<opt>text (%VAR%)</opt>-->
+  
+  </jre>
+  
+  <!--
+  <splash>
+    <file>file</file>
+    <waitForWindow>true|false</waitForWindow>
+    <timeout>seconds [60]</timeout>
+    <timeoutErr>true|false</timeoutErr>
+  </splash>
+  -->
+  <versionInfo>
+    <fileVersion>0.0.0.1</fileVersion>
+    <txtFileVersion>text</txtFileVersion>
+    <fileDescription>text</fileDescription>
+    <copyright>text</copyright>
+    <productVersion>0.0.0.1</productVersion>
+    <txtProductVersion>text</txtProductVersion>
+    <productName>text</productName>
+    <companyName>text</companyName>
+    <internalName>filename</internalName>
+    <originalFilename>filename.exe</originalFilename>
+  </versionInfo>
+  <messages>
+    <startupErr>startupErr</startupErr>
+    <bundledJreErr>bundledJreErr</bundledJreErr>
+    <jreVersionErr>jreVersionErr</jreVersionErr>
+    <launcherErr>launcherErr</launcherErr>
+    <instanceAlreadyExistsMsg>instanceAlreadyExistsMsg</instanceAlreadyExistsMsg>
+  </messages>
+</launch4jConfig>
