@@ -185,9 +185,9 @@ public class Tone {
 		}
 
 		if (getAlter() == -1)
-			s += "\u9837";
+			s += "b";
 		else if (getAlter() == 1)
-			s += "\u266f";
+			s += "#";
 		return s;
 	}
 

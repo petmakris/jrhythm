@@ -2,7 +2,7 @@ package gr.bytewise.jrhythm.api;
 
 public enum ChordType {
 
-	MAJOR(new int[] { 0, 4, 7 }, " "),
+	MAJOR(new int[] { 0, 4, 7 }, "+"),
 	MINOR(new int[] { 0, 3, 7 }, "-"),
 	DIM_KEYS(new int[] { 0, 3, 6 }, "dim"),
 	AUG_KEYS(new int[] { 0, 4, 8 }, "aug"),
